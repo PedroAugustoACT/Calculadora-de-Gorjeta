@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylespage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+    <div class="menuContainer">
+        <div class="menuBox">
+            <h1 class="txtMenu">Smooth Operator</h1>
+        </div>
+
+    </div>
+    <div class="boxContainer">
+        <div class="backBox">
+            <h1 class="txtBox">Valor da conta (R$)</h1>
+            <input type="number" id="valuePay" class="inputBox" min="0">
+            <p id="txtError1" class="txtError"></p>
+        </div>
+        <div class="backBox">
+            <h1 class="txtBox">Porcentagem Gorjeta(%)</h1>
+            <input type="number" id="valueGor" class="inputBox" min="0">
+            <p id="txtError2" class="txtError"></p>
+        </div>
+        <div class="backBox">
+            <h1 class="txtBox">Número de Pessoas</h1>
+            <input type="number" id="valuePeo" class="inputBox" min="1">
+            <p id="txtError3" class="txtError"></p>
+        </div>
+    </div>
+
+    <div class="boxContainer">
+        <div class="backBox">
+            <h1 class="txtBox">Arredondar:</h1>
+            <div class="radioBox">
+                <div class="radioAlign">
+                    <label for="no">Não</label>
+                    <br>
+                    <input type="radio" id="no" class="radioButton" name="arrendondar" value="nao" checked>
+                </div>
+                <div class="radioAlign">
+                    <label for="cima">Para Cima</label>
+                    <br>
+                    <input type="radio" id="cima" class="radioButton" name="arrendondar" value="cima">
+                </div>
+                <div class="radioAlign">
+                    <label for="cima">Para Baixo</label>
+                    <br>
+                    <input type="radio" id="baixo" class="radioButton" name="arrendondar" value="baixo">
+                </div>
+            </div>
+        </div>    
+        <div class="backBox">
+            <input type="button" class="sendButton" id="sendButton" value="Calcular Gorjeta" onclick="showValues()">
+        </div>
+    </div>
+
+    <div class="boxContainer">
+        <div class="backBox2">
+            <h1 class="txtBox">Valor da Gorjeta</h1>
+            <p class="outTxt" id="totalGor">R$ 0.00</p>
+        </div>
+        <div class="backBox2">
+            <h1 class="txtBox">Total a ser pago</h1>
+            <p class="outTxt" id="totalPay">R$ 0.00</p>
+        </div>
+        <div class="backBox2">
+            <h1 class="txtBox">Total por pessoa</h1>
+            <p class="outTxt" id="totalPeo">R$ 0.00</p>
+        </div>
+    </div>
+    <footer>
+        <p class="txtFooter">Developed by: Pedro Augusto &copy;</p>
+    </footer>   
+
+    <script src="scriptpage.js"></script> 
+</body>
+</html>

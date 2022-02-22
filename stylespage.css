@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(18, 58, 58);
+}
+/*Menu*/
+.menuContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.menuBox{
+    background-color: azure;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.txtMenu{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: rgb(18, 58, 58);
+}
+/*CAIXAS DE INPUT*/
+.boxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backBox{
+    background-color: azure;
+    height: 140px;
+    width: 18%;
+    margin-top: 30px;
+    margin-left: 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.txtBox{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(18, 58, 58);
+    margin: 10px;
+    text-align: center;
+}
+.txtError{
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(212, 4, 14);
+    margin: 10px;
+    text-align: center;
+}
+.inputBox{
+    background-color: transparent;
+    border-color: rgb(18, 58, 58);
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px;
+    margin-top: 10px;
+    height: 30px;
+    width: 30%;
+    
+}
+.backBox2{
+    background-color: azure;
+    height: 140px;
+    width: 18%;
+    margin-top: 68px;
+    margin-left: 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.outTxt{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: rgb(18, 58, 58);
+}
+
+/*Radios*/
+.radioBox{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.radioAlign{
+    background-color: transparent;
+    border-color: rgb(18, 58, 58);
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(18, 58, 58);
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 7px;
+}
+.radioButton{
+    background-color: transparent;
+    border-color: rgb(18, 58, 58);
+    cursor: pointer;
+}
+
+/*Botão*/
+.sendButton{
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    color: rgb(18, 58, 58);
+}
+.sendButton:hover{
+    font-size: 27px;
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(18, 58, 58);
+    margin-top: 40px;
+}
+.txtFooter{
+    text-align: center;
+    color: azure;
+}
